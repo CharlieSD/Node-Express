@@ -10,3 +10,8 @@ Traduce instrucciones de ES6 a cualquier versión de Node, en éste ejmplo tradu
 Se usan los ejmplos de los eventos en la biblioteca Readline, que publicará un evento dependiendo de la acción que se este ejecutando.
 
 `npm run start sample.txt`
+
+## Programación Síncrona
+
+Node permite realizar apartado de instrucciones que se ejecuten de manera continua
+
