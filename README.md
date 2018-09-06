@@ -27,3 +27,17 @@ Forma de comunicación de un cliente ocn un servidor para poder enviar mensaje b
 
 Capturar los eventos que generen errores en compilación y ejecución, para poder realizar acciones correctivas o registrar dichos errores 
 
+## Nodemon
+
+Permite trabajar y monitorizar nuestros cambios en nuetra aplicación en Node, es decir que al modificar nuestro código, se  vuelve a ejecutar nuestra aplicación.
+
+`npm install --save-dev nodemon`
+
+Su archivo de configuración:
+
+- nodemon.json
+
+Uso:
+
+`npm run watch`
+
