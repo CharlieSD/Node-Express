@@ -1,0 +1,38 @@
+{
+  "name": "node-express",
+  "version": "1.0.0",
+  "description": "Práctica de Node.js y Express junto con Babel",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node --require 'babel-register' src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CharlieSD/Node-Express.git"
+  },
+  "keywords": [
+    "Node.js",
+    "Express",
+    "Babel"
+  ],
+  "author": {
+    "name": "Carlos Espinoza",
+    "email": "carlos.espinoza@debite.com.mx"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CharlieSD/Node-Express/issues",
+    "email": "carlos.espinoza@debite.com.mx"
+  },
+  "homepage": "https://github.com/CharlieSD/Node-Express#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0"
+  }
+}
