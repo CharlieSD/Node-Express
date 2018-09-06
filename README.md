@@ -19,3 +19,9 @@ Node permite realizar apartado de instrucciones que se ejecuten de manera contin
 
 Uso de la modularización de Async y Events para poder seleccionar cualquiera de las opciones
 
+##Sockets
+
+Forma de comunicación de un cliente ocn un servidor para poder enviar mensaje bidireccionales de el servidor Node a otro cliente
+
+
+
