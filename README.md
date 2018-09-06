@@ -23,5 +23,7 @@ Uso de la modularización de Async y Events para poder seleccionar cualquiera de
 
 Forma de comunicación de un cliente ocn un servidor para poder enviar mensaje bidireccionales de el servidor Node a otro cliente
 
+## Manejo de errores
 
+Capturar los eventos que generen errores en compilación y ejecución, para poder realizar acciones correctivas o registrar dichos errores 
 
