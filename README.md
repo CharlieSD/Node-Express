@@ -15,3 +15,7 @@ Se usan los ejmplos de los eventos en la biblioteca Readline, que publicará un 
 
 Node permite realizar apartado de instrucciones que se ejecuten de manera continua
 
+## Modularización
+
+Uso de la modularización de Async y Events para poder seleccionar cualquiera de las opciones
+
