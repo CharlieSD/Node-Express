@@ -55,5 +55,15 @@ Un objeto Request es una petición a un Servidor Web, mientras que un Response e
 
 Es información que se envía tanto en un request como en un response, para poder definir que es lo que la respuesta del servidor va a devolver, tanto en la codificación de caracteres o el tipo de devuelve.
 
+## Conexión a MongoDB
+
+Se usa la biblioteca *Mongoose*, es necesario tener el demonio de Mongo corriendo mediante el comando:
+
+ `mongod`
+
+También es necesario crea un model basado en un scheme para cada documento,
+
+
+
 
 

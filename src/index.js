@@ -1,23 +1,40 @@
-import http from 'http'
+import mongoose from "mongoose"
 
-const server = http.createServer((request, response) => {
-  response.writeHead(200, { 'Content-Type': 'text/html; charset=UTF-8' })
-  // response.setHeader('Content-Type', 'application/json')
-  // response.statusCode = 404
+const host =  'mongodb://127.0.0.1:27017/films'
 
-  if (request.method === 'GET') {
-    response.write('<h1>Metodo valido</h1>')
-    return response.end()
-  }
+mongoose.set('debug', true)
+mongoose.Promise = global.Promise
 
-  response.write('<h1>Esta intentando acceder con un metodo no valido</h1>')
-  return response.end()
+const conn = mongoose.createConnection(
+  host,
+  { PoolSize: 200 }
+)
+
+conn.on('error', err => {
+  console.log('Error', err)
+  return process.exit()
 })
 
-server.listen(8000, 'localhost', err => {
-  if (err) {
-    return console.log('Error: ', err)
-  }
+conn.on('connected', () => console.log('Conectado a MongoDB'))
 
-  console.log('Server opened listen on http://localhost:8000')
+const filSchema = new mongoose.Schema({
+  _id: mongoose.Schema.Types.ObjectId,
+  title: { type: String, trim: true, required: true},
+  poster: { type: String, trim: true, required: true}
+},{
+  strict: false
+})
+
+const Film = conn.model('Film', filSchema)
+
+const newDocument = new Film({
+  _id: new mongoose.Types.ObjectId,
+  title: 'Star Wars',
+  poster: 'http://www.debite.com.mx'
+})
+
+newDocument.save(err => {
+  if(err){
+    throw err
+  }
 })
