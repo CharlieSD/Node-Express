@@ -41,3 +41,9 @@ Uso:
 
 `npm run watch`
 
+## Servidor Básico
+
+Uso de la biblioteca interna de Node, *http*
+
+Crea un servidor que responde con un título y se mantiene en el puerto 8000 del localhost
+

@@ -1,3 +1,14 @@
-console.log('Hola')
+import http from 'http'
 
-console.log('Segunda prueba');
+const server = http.createServer((request, response) => {
+  response.write('<h1>Ejemplo de un servidor basico!</h1>')
+  response.end()
+})
+
+server.listen(8000, 'localhost', err => {
+  if (err) {
+    return console.log('Error: ', err)
+  }
+
+  console.log('Server opened listen on http://localhost:8000')
+})
