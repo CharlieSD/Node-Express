@@ -51,7 +51,9 @@ Crea un servidor que responde con un título y se mantiene en el puerto 8000 del
 
 Un objeto Request es una petición a un Servidor Web, mientras que un Response es la respuesta a dicho request
 
+## Encabezados
 
+Es información que se envía tanto en un request como en un response, para poder definir que es lo que la respuesta del servidor va a devolver, tanto en la codificación de caracteres o el tipo de devuelve.
 
 
 
