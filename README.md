@@ -47,3 +47,11 @@ Uso de la biblioteca interna de Node, *http*
 
 Crea un servidor que responde con un título y se mantiene en el puerto 8000 del localhost
 
+## Objeto Request y Response
+
+Un objeto Request es una petición a un Servidor Web, mientras que un Response es la respuesta a dicho request
+
+
+
+
+
